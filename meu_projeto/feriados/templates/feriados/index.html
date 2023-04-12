@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Feriados hoje</title>
+  </head>
+  <body>
+    <h1>Feriados hoje:</h1>
+    {% if feriados_hoje %}
+    <ul>
+      {% for feriado in feriados_hoje %}
+      <li>{{ feriado.nome }}</li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>Nenhum feriado hoje.</p>
+    {% endif %}
+  </body>
+</html>
